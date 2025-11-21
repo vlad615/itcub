@@ -3,53 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
 </head>
-<body>
-    <header>
-        <span>IT-INCUBATOR</span>
+<body data-cy="hw2-body">
+    <header data-cy="hw2-header">
+        <span data-cy="hw2-header-span">IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
-        <h1>Амбросов Владислав Эльмирович</h1>
-        <p>Frontend разработчик на React! И просто хороший человек.</p>
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240703165023/Frontend-Development-(1).webp" alt="Frontend-Development">
+    <section class="main-section" data-cy="hw2-section-main-pre">
+        <h1 class="main-title" data-cy="hw2-main-title">Иванов Иван Иванович</h1>
+        <p class="main-text" data-cy="hw2-text">Работаю в IT-INCUBATOR-е. Люблю HTML, CSS и все, что связано с frontend разработкой.</p>
+        <img class="main-image" data-cy="hw2-main-image" src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg" alt="">
     </section>
 
-    <section data-cy="hw1-section-about-pre">
-        <select>
-            <option value="minsk">Minsk</option>
-            <option value="moskva" selected>Moskva</option>
-            <option value="london">London</option>
+    <section class="about-section" data-cy="hw2-section-about-pre">
+        <select data-cy="hw2-select-pre" name="" data-cy="">
+            <option value="">Paris</option>
+            <option value="" selected>Minsk</option>
+            <option value="">Milan</option>
         </select>
-        <div data-cy="hw1-unordered-list-box-pre">
-            <h2>Любимые группы</h2>
-            <ul>
-                <li>Accept</li>
-                <li>ImagenDragons</li>
-                <li>Сплин</li>
+
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые фреймворки</h2>
+            <ul class="frameworks-list" data-cy="hw2-frameworks-list-pre">
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue</li>
             </ul>
         </div>
-        <div data-cy="hw1-ordered-list-box-pre">
-            <h2>Любимые музыканты</h2>
-            <ol>
-                <li>Paul Gilbert</li>
-                <li>James lo Scott</li>
-                <li>John Petrucci</li>
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Рейтинг любимых книг</h2>
+            <ol class="books-list" data-cy="hw2-books-list-pre">
+                <li>HTML5+CSS3. Основы современного web-дизайна</li>
+                <li>HTML5, CSS3 и JavaScript. Исчерпывающее руководство</li>
+                <li>HTML5+CSS3. Разработка сайтов для любых браузеров и устройств. 2-е издание</li>
             </ol>
         </div>
-        <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
-            <label><input type="checkbox" name="html" checked>HTML</label>
-            <label><input type="checkbox" name="css" checked>CSS</label>
-            <label><input type="checkbox" name="react">React</label>
+        <div>
+            <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
+            <label class="label" data-cy="hw2-label-pre" for="1">
+                <input type="checkbox" checked name="" id="1">
+                HTML5
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="2">
+                <input type="checkbox" checked name="" id="2">
+                CSS3
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="3">
+                <input type="checkbox" name="" id="3">
+                JavaScript
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="4">
+                <input type="checkbox" name="" id="4">
+                Jquery
+            </label>
+    
+            <label class="label" data-cy="hw2-label-pre" for="5">
+                <input type="checkbox" name="" id="5">
+                React
+            </label>
         </div>
-        <input type="text" placeholder="Новый скилл">
-        <button>Добавить</button>
-        <hr>
-        <table data-cy="hw-about-table-pre" border="solid black 1px">
+        
+        <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
+        <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
+        
+        <hr class="line" data-cy="hw2-line-pre">
+
+        <table data-cy="hw2-about-table-pre" border="1">
             <tr>
-                <th>п\п</th>
+                <th>п/п</th>
                 <th>Наименование</th>
                 <th>Количество</th>
             </tr>
@@ -69,13 +98,14 @@
                 <td>1</td>
             </tr>
             <tr>
-                <td colspan="2">Итог:</td>
+                <td colspan="2">Итого:</td>
                 <td>4</td>
             </tr>
         </table>
     </section>
+
     <footer data-cy="hw-footer-pre">
-        <a href="https://it-incubator.io/">it-incubator</a>
+        <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 </html>
