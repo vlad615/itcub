@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border-radius: 4px;
+    background: #0a61f7;
+    font-weight: 500;
+    font-size: 14px;
+    border-style: none;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #95a1bb;
+}
+
+/* --------- HEADER -------- */
+
+.container{
+    height: 100%;
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    /* height: 76px; */
+    background: #0a61f7;
+    padding: 14px 0;
+    /* display: flex; */
+}
+
+.nav-item{
+    display: flex;
+    gap: 24px;
+}
+
+.nav-item li a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ------- MARKUP SECTION ------- */
+
+.hello-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.title-markup{
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 1.1;
+    color: #363940;
+    margin-bottom: 30px;
+}
+
+.text-markup{
+    margin-bottom: 40px;
+}
+
+.btn-learn-more{
+    width: 152px;
+    height: 50px;
+}
+
+
+/* ------ RATES SECTION ------ */
+
+.rates-section{
+    background: #f9fafc;
+}
+
+.rates-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #363940;
+    margin-bottom: 20px;
+}
+
+.title + p {
+    margin-bottom: 40px;
+}
+
+table{
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+th, td{
+    width: 240px;
+    height: 50px;
+    border: 1px solid #95a1bb;
+    text-align: center;
+}
+
+.table-name{
+    text-align: left;
+    color: #95a1bb;
+}
+
+.table-th{
+    text-align: left;
+    color: #363940;
+}
+
+.column{
+    line-height: 1.2;
+    color: #363940;
+}
+
+.last-tr{
+    height: 100px;
+}
+
+.questions{
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.5;
+    color: #0a61f7;
+    text-align: left;
+}
+
+.btn-get{
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #f9fafc;
+    line-height: 1.6;
+    color: #0a61f7;
+    border: 1px solid #0a61f7;
+    width: 140px;
+    height: 36px;
+}
+
+.btn-get:hover{
+    color: #f9fafc;
+    background-color: #0a61f7;
+}
+
+
+/* ------- CREATE ACCOUNT -------- */
+
+.account-wraper{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.account-info{
+    max-width: 500px;
+    height: 370px;
+}
+
+.acc-txt{
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+.access-acc{
+    color: #363940;
+    list-style-image: url("/photo/Check.svg");
+    margin: 0 0 15px 30px;
+}
+
+form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+input, select{
+    height: 50px;
+}
+
+input, textarea, select{
+    font-family: "Rubik", sans-serif;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #95a1bb;
+}
+
+input[type="email"], input[type="password"], input[type="date"], select{
+    flex-grow: 1;
+    width: 230px;
+}
+
+select{
+    background-image: url("photo/Arrow-down.svg");
+    background-position: right ;
+    appearance: none;
+    background-repeat: no-repeat;
+}
+
+fieldset, select{
+    border-radius: 4px;
+}
+
+textarea{
+    resize: none;
+}
+
+
+/* ---------- FOOTER ----------- */
+
+
+footer{
+    background: #0a61f7;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+

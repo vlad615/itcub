@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+section {
+  background: #eff2f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.card {
+  width: 1170px;
+  min-height: 800px;
+  background: #fff;
+  box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
+  padding: 60px 0 70px;
+  display: flex;
+}
+
+.image-section{
+    border-right: 2px solid rgba(20, 20, 20, 0.15);
+    min-width: 540px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.preview-images{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.preview-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.preview-image.selected, .preview-image:hover{
+    box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
+}
+
+.info-section{
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: rgba(20, 20, 20, 0.9);
+    margin-bottom: 5px;
+}
+
+.subtitle{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(20, 20, 20, 0.4);
+    margin-bottom: 60px;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(20, 20, 20, 0.7);
+    margin-bottom: 65px;
+}
+
+.title{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(20, 20, 20, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+ul{
+    display: flex;
+    align-items: center;    
+    margin-bottom: 65px;
+    gap: 26px;
+}
+
+li{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.color-item{
+    width: 16px;
+    height: 16px;
+    filter: drop-shadow(2px 2px 4px rgba(81, 91, 117, 0.25));  /* тень с повторением контура фигуры, значения: сдвиг-x | сдвиг-y | размытие | цвет */
+    border-radius: 50%;
+}
+
+li.selected, li:hover{
+    box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
+    border-radius: 50%;
+}
+
+.blue{
+    background-color: #013c7d;
+}
+
+.green{
+    background-color: #63cba7;;
+}
+
+.red{
+    background-color: #d52f29;
+}
+
+.black{
+    background-color: #141414;
+}
+
+.yellow{
+    background-color: #f2c723;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper > div{
+    flex-grow: 1;
+}
+
+select{
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(20, 20, 20, 0.8);
+    border: none;
+    width: 80px;
+    background-image: url("assets/images/ph_caret.svg");
+    background-repeat: no-repeat;
+    appearance: none;
+    background-position: right;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgba(20, 20, 20, 0.8);
+}
+
+button{
+    margin-top: 75px;
+    font-weight: 500;
+    font-size: 18px;
+    
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    border: none;
+    background: #141414;
+}
+
+button:hover{
+    transform: translateY(-5px);
+}

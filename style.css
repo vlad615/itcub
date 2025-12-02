@@ -83,7 +83,7 @@ select {
     font-weight: 400;
     font-size: 16px;
     appearance: none; 
-    background-image: url("./ep_arrow-down.svg");
+    background-image: url("./accets/ep_arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right 12px top 50%;
 }
@@ -121,7 +121,7 @@ select:hover,
 .frameworks-list {
     font-weight: 400;
     font-size: 16px;
-    list-style-image: url(./solar_map-arrow-up-bold.png);
+    list-style-image: url(./accets/solar_map-arrow-up-bold.svg);
     padding-left: 20px;
 }
 
