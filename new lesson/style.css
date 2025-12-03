@@ -11,6 +11,7 @@ ul{
 body{
     font-family: "Rubik", sans-serif;
     font-weight: 400;
+    min-width: 375px;
 }
 
 section {
@@ -19,10 +20,12 @@ section {
   display: flex;
   justify-content: center;
   align-items:center;
+  padding: 40px;
 }
 
 .card {
-  width: 1170px;
+  /* width: 100%; */
+  max-width: 1170px;
   min-height: 800px;
   background: #fff;
   box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
@@ -194,4 +197,69 @@ button{
 
 button:hover{
     transform: translateY(-5px);
+}
+
+
+@media screen and (max-width: 1050px) {
+    .card{
+        flex-direction: column;
+    }
+
+    .image-section{
+        border-right: none;
+        border-bottom: 2px solid rgba(20, 20, 20, 0.15);
+        margin-bottom: 60px;
+        min-width: auto;
+    }
+
+    .main-image-wrapper{
+        margin-bottom: 60px;
+    }
+
+    .preview-images{
+        margin-bottom: 70px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    section{
+        padding: 15px 15px 40px;
+    }
+
+    .card{
+        padding: 60px 0;
+    }
+
+    .info-section{
+        padding: 0 20px;
+    }
+
+    .main-image{
+        width: 250px;
+    }
+    
+    .main-title{
+        font-size: 34px;
+    }
+    
+    .subtitle{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .description{
+        font-size: 16px;
+        margin-bottom: 55px;
+    }
+
+    ul{
+        gap:36px;
+    }
+
+    button{
+        margin-top: 65px;
+    }
+
+
 }
