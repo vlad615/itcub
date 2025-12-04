@@ -15,104 +15,120 @@
 <body>
     <header>
         <div class="container">
-            <img src="./photo/Logo.svg" alt="logo">
-            <nav>
-                <ul>
-                    <li>Main</li>
-                    <li>Rates</li>
-                    <li>Create account</li>
-                </ul>
-            </nav>   
+            <div class="header-wrapper">
+                <img src="./photo/Logo.svg" alt="logo">
+                <nav>
+                    <ul class="navigate">
+                        <li><a href="">Main</a></li>
+                        <li><a href="">Rates</a></li>
+                        <li><a href="">Create account</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="main">
         <div class="container">
-            <div class="markup-text">
-                <h1>Markup achievement</h1>
-                <p>The harder you work for something, the greater you’ll feel when you achieve it.</p>
-                <button>Learn More</button>
+            <div class="markup-wrapper">
+                <div class="markup-text">
+                    <h1 class="main-title">Markup achievement</h1>
+                    <p class="text">The harder you work for something, the greater you’ll feel when you achieve it.</p>
+                    <button class="main-btn">Learn More</button>
+                </div>
+                <img src="./photo/image.png" alt="markup-image">
             </div>
-            <img src="./photo/image.png" alt="markup-image">
         </div>
     </section>
-    <section class="retes">
-        <div class="container-rates">
-            <h2>Rates</h2>
-            <p>Failure will never overtake me if my determination to succeed is strong enough.</p>
-            <table>
-                <tr>
-                    <th>Features</th>
-                    <th>Standart</th>
-                    <th>Plus</th>
-                    <th>PRO</th>
-                </tr>
-                <tr>
-                    <th>Theory</th>
-                    <td><img src="./photo/Check.svg" alt="check"></td>
-                    <td><img src="./photo/Check.svg" alt="check"></td>
-                    <td><img src="./photo/Check.svg" alt="check"></td>
-                </tr>
-                <tr>
-                    <th>Practice</th>
-                    <td><img src="./photo/Close.svg" alt="close"></td>
-                    <td><img src="./photo/Check.svg" alt="check"></td>
-                    <td><img src="./photo/Check.svg" alt="check"></td>
-                </tr>
-                <tr>
-                    <th>Code review</th>
-                    <td><img src="./photo/Close.svg" alt="close"></td>
-                    <td><img src="./photo/Close.svg" alt="close"></td>
-                    <td><img src="./photo/Check.svg" alt="check"></td>
-                </tr>
-            </table>
+    <section class="rates">
+        <div class="container">
+            <div class="rates-wrapper">
+                <h2 class="title">Rates</h2>
+                <p class="text">Failure will never overtake me if my determination to succeed is strong enough.</p>
+                <table>
+                    <tr>
+                        <th class="row gray">Features</th>
+                        <th class="column">Standart</th>
+                        <th class="column">Plus</th>
+                        <th class="column">PRO</th>
+                    </tr>
+                    <tr>
+                        <th class="row">Theory</th>
+                        <td><img src="./photo/Check.svg" alt="check"></td>
+                        <td><img src="./photo/Check.svg" alt="check"></td>
+                        <td><img src="./photo/Check.svg" alt="check"></td>
+                    </tr>
+                    <tr>
+                        <th class="row">Practice</th>
+                        <td><img src="./photo/Close.svg" alt="close"></td>
+                        <td><img src="./photo/Check.svg" alt="check"></td>
+                        <td><img src="./photo/Check.svg" alt="check"></td>
+                    </tr>
+                    <tr>
+                        <th class="row">Code review</th>
+                        <td><img src="./photo/Close.svg" alt="close"></td>
+                        <td><img src="./photo/Close.svg" alt="close"></td>
+                        <td><img src="./photo/Check.svg" alt="check"></td>
+                    </tr>
+                    <tr>
+                        <th class="row"><a href="http://answer.ru">Have questions?</a></th>
+                        <td><button class="btn-get"><b>Get now</b></button></td>
+                        <td><button class="btn-get"><b>Get now</b></button></td>
+                        <td><button class="btn-get"><b>Get now</b></button></td>
+                    </tr>
+                </table>
+            </div>
+            
         </div>
     </section>
     <section class="create-account">
         <div class="container">
-            <div class="account-text">
-                <h2>Create your free account</h2>
-                <p>Let us first talk about dreams. We all know that dreams do play a role in our daily lives.
-                   The majority of people pay little attention to dreams. Dreams can help us find solutions
-                   to our daily problems and see things from a different perspective. Whenever we are dreaming,
-                   we can be who or what we want to be, regardless of the fact that in real life.</p>
-                <ul>
-                    <li>Easy setup, fast start</li>
-                    <li>Free forever for core features</li>
-                    <li>14-day trial of premium features</li>
-                </ul>
+            <div class="create-account-wrapper">
+                <div class="account-text">
+                    <h2 class="title">Create your free account</h2>
+                    <p class="text">Let us first talk about dreams. We all know that dreams do play a role in our daily lives.
+                    The majority of people pay little attention to dreams. Dreams can help us find solutions
+                    to our daily problems and see things from a different perspective. Whenever we are dreaming,
+                    we can be who or what we want to be, regardless of the fact that in real life.</p>
+                    <ul class="benifits">
+                        <li>Easy setup, fast start</li>
+                        <li>Free forever for core features</li>
+                        <li>14-day trial of premium features</li>
+                    </ul>
+                </div>
+                <form action="post">
+                    <input type="text" placeholder="Full Name*">
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Email*">
+                        <input type="password" placeholder="Password*">
+                        <input type="date" >
+                        <select name="country" id="country">
+                            <option selected disabled>Country</option>
+                            <option value="Minsk">Minsk</option>
+                            <option value="Kiew">Kiew</option>
+                            <option value="Moskow">Moskow</option>
+                        </select>
+                        
+                    </div>
+                    <div class="stack-wrapper">
+                        <label for="front"><input id="front" type="radio" checked>Fronend</label>
+                        <label for="back"><input id="back" type="radio">Backend</label>
+                    </div>
+                    <fieldset>
+                        <legend>Favorite Technologies</legend>
+                        <label for="html"><input id="html" type="checkbox" checked>HTML</label>
+                        <label for="css"><input id="css" type="checkbox" checked>CSS</label>
+                        <label for="react"><input id="react" type="checkbox">React</label>
+                        <label for="javascript"><input id="javascript" type="checkbox">JavaScript</label>
+                    </fieldset>
+                    <textarea id="about-you" placeholder="Something else about you..."></textarea>
+                    <button class="reg" type="submit">registration</button>
+                </form>
             </div>
-            <form action="post">
-                <input type="text" placeholder="Full Name*">
-                <div class="input-wrapper">
-                    <input type="text" placeholder="Email*">
-                    <input type="text" placeholder="Password*">
-                    <input type="date" placeholder="Date of Birth">
-                    <select name="country" id="country">
-                        <option selected disabled>Country</option>
-                        <option value="Minsk">Minsk</option>
-                        <option value="Kiew">Kiew</option>
-                        <option value="Moskow">Moskow</option>
-                    </select>
-                    
-                </div>
-                <div class="stack-wrapper">
-                    <label for="front"><input id="front" type="radio">Fronend</label>
-                    <label for="back"><input id="back" type="radio">Backend</label>
-                </div>
-                <fieldset>
-                    <legend>Favorite Technologies</legend>
-                    <label for="html"><input id="html" type="checkbox">HTML</label>
-                    <label for="css"><input id="css" type="checkbox">CSS</label>
-                    <label for="react"><input id="react" type="checkbox">React</label>
-                    <label for="javascript"><input id="javascript" type="checkbox">JavaScript</label>
-                </fieldset>
-                <textarea id="about-you" placeholder="Something else about you..."></textarea>
-                <button>registration</button>
-            </form>
+            
         </div>
     </section>
     <footer>
-        <span>Copyright © 2023. All rights reserved.</span>
+        <small>Copyright © 2023. All rights reserved.</small>
     </footer>
 </body>
 </html>
