@@ -25,5 +25,16 @@ button{
 }
 
 .container{
-    
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.title{
+    font-weight: 500;
+font-size: 32px;
+
+    /* line-height: 43px; */ 
+    line-height: 1.34375;
+    text-align: center;
+    color: #363940;
 }
