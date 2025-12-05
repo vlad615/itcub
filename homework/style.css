@@ -30,6 +30,7 @@ button{
 
 .container{
     max-width: 1170px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -38,6 +39,10 @@ button{
     font-size: 32px;
     line-height: 1.3em;
     color: #363940;
+}
+
+.menu-burger{
+    display: none;
 }
 
 .text{
@@ -49,7 +54,7 @@ button{
 
 header{
     background: #0a61f7;
-    padding: 14px 0;
+    padding: 15px 0;
 }
 
 .header-wrapper{
@@ -78,12 +83,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 800px;
+    min-height: 800px;
     /* flex-wrap: wrap; */
 }
 
 .markup-wrapper img{
     align-self: flex-end;
+    max-width: 656px;
+    width: 100%;
 }
 
 .main-title{
@@ -115,6 +122,7 @@ header{
 /* --------------2 section-------------- */
 
 .rates{
+    /* width: max-content; */
     background: #f9fafc;
     padding: 100px 0;
 }
@@ -221,10 +229,11 @@ tr td{
 }
 
 form{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 input, select, fieldset, textarea{
@@ -272,6 +281,7 @@ textarea {
     width: 100%;
     min-height: 80px;
     resize: none;
+    padding: 15px
 }
 
 form .reg {
@@ -307,3 +317,63 @@ small{
     line-height: 1.5em;
     color: #fff;
 }
+
+
+@media screen and (max-width: 1070px){
+    .markup-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+
+    .main-title{
+        margin-top: 100px;
+    }
+
+    .main-btn{
+        margin-bottom: 80px;
+    }
+    
+    .markup-wrapper img{
+        align-self: center;
+    }
+
+    .table-wrapper{
+        overflow-x: auto;
+        max-width: 940px;
+        width: 100%;
+    }
+
+    .create-account-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px
+    }
+
+    .account-text{
+        align-self: flex-start;
+    }
+
+    .account-text .text{
+        max-width: none;
+    }
+
+}
+
+
+@media screen and (max-width: 656px) {
+
+    .navigate{
+        display: none;
+    }
+
+    .menu-burger{
+        display: inline-block;
+    }
+
+    .main-title{
+        margin-top: 60px;
+        font-size: 52px;
+    }
+
+}
+
