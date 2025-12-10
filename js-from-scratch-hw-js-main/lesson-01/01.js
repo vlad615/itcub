@@ -2,4 +2,9 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = 0
+let rn = 0
+while (rn != 21){
+    sum = sum + rn
+    rn++
+}

@@ -5,4 +5,12 @@
 */
 
 // your code
-let sum
+let sum = 1
+let rn = 0
+while (rn != 21){
+    if (rn%2===1){
+      sum = sum + rn
+    }
+    rn++
+}
+console.log(sum)
