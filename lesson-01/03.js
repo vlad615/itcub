@@ -5,7 +5,7 @@
 */
 
 // your code
-let sum = 1
+let sum = 0
 let rn = 0
 while (rn != 20){
     if (rn%2===1){
