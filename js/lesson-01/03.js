@@ -13,4 +13,3 @@ while (rn != 21){
     }
     rn++
 }
-console.log(sum)
