@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    background: #191919;
+    min-width: 375px;
+}
+
+.container{
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159%;
+    color: #fff;
+}
