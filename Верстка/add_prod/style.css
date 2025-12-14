@@ -8,27 +8,91 @@ ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
     background: #191919;
     min-width: 375px;
 }
 
 .container{
-    display: flex;
     max-width: 1300px;
     margin: 0 auto;
 
 }
 
+header{
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
 .header-wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
-    font-weight: 400;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul a{
     font-size: 17px;
     line-height: 159%;
     color: #fff;
+}
+
+.main-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.main-img{
+    width: 100%;
+    max-width: 650px;
+}
+
+.main-text{
+    max-width: 562px;
+}
+
+h1{
+    font-size: 70px;
+    line-height: 126%;
+    letter-spacing: 0.05em;
+    margin-bottom: 90px;
+}
+
+h1 .next{
+    font-size: 75px;
+    line-height: 117%;
+}
+
+h1 .level{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+}
+
+.resurce-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lisn-on{
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.resurces{
+    display: flex;
+    gap: 20px;
 }
