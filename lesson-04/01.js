@@ -14,12 +14,7 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
 function includesElement(lst, num) {
-    for (i in lst){
-        if (lst[i] === num){
-            return true
-        }
-    }
-    return false
+    return lst.indexOf(num)>-1
 }
 
 console.log(includesElement([1, 2, 3], -1));
