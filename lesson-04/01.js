@@ -17,5 +17,4 @@ function includesElement(lst, num) {
     return lst.indexOf(num)>-1
 }
 
-console.log(includesElement([1, 2, 3], 0));
  
