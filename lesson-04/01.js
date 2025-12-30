@@ -14,7 +14,18 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
 function includesElement(lst, num) {
+    if (lst.length === 0){
+        return false
+    }
     return lst.indexOf(num)>-1
 }
 
+console.log(includesElement([1, 2, 3], -1));
+console.log(includesElement([], 0));
+console.log(includesElement([1, 2, 3], 1));
+console.log(includesElement([1, 2, 3], 2));
+console.log(includesElement([1, 2, 3], 3));
+console.log(includesElement([1, 2, 3], 4));
+console.log(includesElement([1, 2, 3], 5));
+console.log(includesElement([1, 2, 3], 6));
  
