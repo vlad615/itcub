@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+button{
+    border-style: none;
+}
+
 body{
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -23,12 +27,12 @@ body{
 .container{
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 70px;
 
 }
 
 header{
     padding: 40px 0;
-    margin-bottom: 40px;
 }
 
 .header-wrapper{
@@ -52,6 +56,7 @@ nav ul a{
     display: flex;
     align-items: center;
     gap: 60px;
+    margin: 40px 0;
 }
 
 .main-img{
@@ -95,4 +100,102 @@ h1 .level{
 .resurces{
     display: flex;
     gap: 20px;
+}
+
+.episodes-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 100px 0;
+}
+
+.title-ep{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 124%;
+    letter-spacing: 0.05em;
+}
+
+.btn-ep{
+    border-radius: 6px;
+    max-width: 208px;
+    height: 51px;
+    background: #118da8;
+    color: #fff;
+    font-size: 17px;
+    line-height: 159%;
+    padding: 0 15px 0 20px;
+}
+
+article{
+    display: flex;
+    border-radius: 32px;
+    background-color: #000;
+    padding: 40px;
+    gap: 53px;
+}
+
+.img-ep{
+    max-width: 389px;
+    width: 100%;
+}
+
+.text-ep{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 778px;
+}
+
+.label{
+    border-radius: 6px;
+    height: 27px;
+    background: #191919;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 16px;
+}
+
+.num-ep{
+    font-size: 17px;
+    line-height: 159%;
+    color: #118da8;
+
+}
+
+.episod{
+    max-width: 670px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+}
+
+.about{
+    font-size: 22px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+@media screen and (max-width: 1100px){
+    .main-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text{
+        max-width: none;
+    }
+
+    article{
+        flex-direction: column;
+    }
 }
