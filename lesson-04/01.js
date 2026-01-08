@@ -14,15 +14,18 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
 function includesElement(lst, num) {
-    for (let i = 0; i<lst.length; i++){
+    // for (let i = 0; i<lst.length; i++){
+    //     if (lst[i]===num){
+    //         return true
+    //     }
+    // }
+    let i = 0;
+    while (i<lst.length){
         if (lst[i]===num){
-            // console.log(true);
-            
             return true
         }
+        i++;
     }
-    // console.log(false);
-    
     return false
 }
 
