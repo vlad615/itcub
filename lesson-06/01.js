@@ -26,9 +26,19 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 const filter = (num, f) => {
   newn = []
   for (i in num){
-    if (f(num[i], i)){
+    if (f(num[i], Number(i))){
       newn.push(num[i])
     }
   }
   return newn
 }
+const numbers = [1, 2, 3, 4, 5]
+
+const oddNumbers = filter(numbers, (element, index) => {
+  return element % 2 !== 0
+});
+
+console.log(oddNumbers) // Должен вывести: [1, 3, 5]
+
+
+
