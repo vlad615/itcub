@@ -24,7 +24,6 @@ const img_tech = document.getElementById('web-tech-image');
 
 prev_btn.onclick = function(){
   let ind_img = WEB_TECH_IMAGES.indexOf(img_tech.getAttribute("src"));
-  
   if (ind_img === 0){
     img_tech.setAttribute('src', WEB_TECH_IMAGES[2])
   } else {
@@ -35,8 +34,8 @@ prev_btn.onclick = function(){
 
 next_btn.onclick = function(){
   let ind_img = WEB_TECH_IMAGES.indexOf(img_tech.getAttribute("src"));
-  if (ind_img === 0){
-    img_tech.setAttribute('src', WEB_TECH_IMAGES[2])
+  if (ind_img === 2){
+    img_tech.setAttribute('src', WEB_TECH_IMAGES[0])
   } else {
     img_tech.setAttribute('src', WEB_TECH_IMAGES[ind_img+1])
   }
