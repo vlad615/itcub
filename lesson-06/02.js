@@ -24,4 +24,10 @@ const doubledNumbers = map(numbers, (element, index) => {
 console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
-const map = () => {}
+const map = (num, f) => {
+  newn = []
+  for (i in num){
+    newn.push(f(num[i], i))
+  }
+  return newn
+}
