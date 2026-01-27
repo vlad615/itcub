@@ -314,18 +314,24 @@ input{
 .foot-wrapper{
     padding: 100px 70px;    
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
 }
 
 .cnc{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-right: 205px;
 }
 
 .contacts{
     display: flex;
     gap: 10px;
+}
+
+.menu{
+    padding-right: 100px;
 }
 
 .navigate{
@@ -360,10 +366,17 @@ input{
         width:auto;
     }
 
-    .logo-large{
-        display: none;
+    .cnc, .menu{
+        padding: 0px;
     }
 
+}
+
+
+@media screen and (max-width: 768px){
+    .foot-wrapper{
+        flex-direction: column;
+    }
 }
 
 
