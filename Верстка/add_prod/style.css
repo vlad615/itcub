@@ -49,7 +49,7 @@ nav ul {
     gap: 40px;
 }
 
-nav ul a{
+nav ul a, .navigate a{
     font-size: 17px;
     line-height: 159%;
     color: #fff;
@@ -311,6 +311,29 @@ input{
     color: rgba(255, 255, 255, 0.7);
 }
 
+.foot-wrapper{
+    padding: 100px 70px;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.cnc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts{
+    display: flex;
+    gap: 10px;
+}
+
+.navigate{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media screen and (max-width: 1200px){
     .main-wrapper{
         flex-direction: column;
@@ -336,6 +359,11 @@ input{
         align-self: start;
         width:auto;
     }
+
+    .logo-large{
+        display: none;
+    }
+
 }
 
 
