@@ -7,10 +7,17 @@
 */
 
 function capitalizeWords(words) {
-  words = words.split(' ');
+  words = words.slice(0,1).toUpperCase() + words.slice(1)
   for (i in words){
-    words[i] = words[i].slice(0,1).toUpperCase() + words[i].slice(1).toLowerCase()
+    if (words[i-1]===" "){
+      words = words.slice(0, i) + words.slice(i, Number(i)+1).toUpperCase() + words.slice(Number(i)+1);
+    }
   }
-  words = words.join(" ")
+  // words = words.split(' ');
+  // for (i in words){
+  //   words[i] = words[i].slice(0,1).toUpperCase() + words[i].slice(1).toLowerCase()
+  // }
+  // words = words.join(" ")
   return words
 }
+console.log(capitalizeWords("hello world from jaafASDFASpt"))

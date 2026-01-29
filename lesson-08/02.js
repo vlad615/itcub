@@ -4,11 +4,6 @@
  */
 
 function isNumeric(str) {
-  // your code
+  let space = str.indexOf(" ");
+  return space > -1? false : !isNaN(Number(str))
 }
-
-// console.log(isNumeric("123")) // Ожидаемый результат: true
-// console.log(isNumeric("12.3")) // Ожидаемый результат: true
-// console.log(isNumeric("123abc")) // Ожидаемый результат: false
-// console.log(isNumeric("abc")) // Ожидаемый результат: false
-// console.log(isNumeric(" ")) // Ожидаемый результат: false
