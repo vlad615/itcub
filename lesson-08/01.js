@@ -20,4 +20,8 @@ function capitalizeWords(words) {
   // words = words.join(" ")
   return words
 }
-console.log(capitalizeWords("hello world from jaafASDFASpt"))
+console.log(capitalizeWords("hello world from jaafASDFASpt"));
+console.log(capitalizeWords("a"));
+console.log(capitalizeWords(" "));
+console.log(capitalizeWords(""))
+
