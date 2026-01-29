@@ -14,5 +14,3 @@ function capitalizeWords(words) {
   words = words.join(" ")
   return words
 }
-
-console.log(capitalizeWords("hello woASDFrld from javascASDFript"))
