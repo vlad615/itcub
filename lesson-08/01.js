@@ -6,4 +6,13 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+function capitalizeWords(words) {
+  words = words.split(' ');
+  for (i in words){
+    words[i] = words[i].slice(0,1).toUpperCase() + words[i].slice(1).toLowerCase()
+  }
+  words = words.join(" ")
+  return words
+}
+
+console.log(capitalizeWords("hello woASDFrld from javascASDFript"))
