@@ -33,7 +33,7 @@ body{
 }
 
 section{
-    padding: 0 60px;
+    padding: 0 20px;
 }
 /* 
 .img{
@@ -49,7 +49,7 @@ section{
 }
 
 header{
-    padding: 40px 60px;
+    padding: 40px 70px;
 }
 
 .header-wrapper{
@@ -73,6 +73,10 @@ nav ul a, .navigate a{
 
 nav ul a:hover, .navigate a:hover{
     color: #118da8;
+}
+
+nav img{
+    display: none;
 }
 
 .main-wrapper{
@@ -100,12 +104,13 @@ nav ul a:hover, .navigate a:hover{
 .img{
     width: 100%;
     max-width: 650px;
+    border-radius: 12px;
     object-fit: cover;
     aspect-ratio: 4/5;
 }
 
 .main-text{
-    max-width: 560px;
+    max-width: 526px;
 }
 
 h1{
@@ -120,6 +125,7 @@ h1{
     font-size: 75px;
     line-height: 117%;
     letter-spacing: 0.04em;
+    padding-right: 25px;
     position: relative;
 }
 
@@ -130,7 +136,7 @@ h1{
     width: 160px;
     height: 10px;
     background-image: url("/accets/next.svg");
-    right: 0px;
+    right: 25px;
     bottom: 0px;
 }
 
@@ -149,6 +155,7 @@ h1{
 }
 
 .lisn-on{
+    padding-top: 90px;
     font-size: 15px;
     line-height: 160%;
 }
@@ -171,6 +178,7 @@ h1{
     display: flex;
     flex-direction: column;
     margin: 100px 0;
+    align-items: stretch;
 }
 
 .title-ep{
@@ -185,7 +193,7 @@ h2{
     font-size: 64px;
     line-height: 124%;
     letter-spacing: 0.05em;
-    margin-bottom: 28px;
+    /* margin-bottom: 28px; */
 }
 
 .btn-ep{
@@ -196,7 +204,8 @@ h2{
     color: #fff;
     font-size: 17px;
     line-height: 159%;
-    padding: 0 15px 0 20px;
+    padding: 0 15px;
+    margin-top: 20px;
 }
 
 article{
@@ -209,10 +218,8 @@ article{
 }
 
 .img-ep{
-    max-width: 389px;
+
     width: 100%;
-    object-fit: cover;
-    aspect-ratio: 4/5;
 }
 
 .text-ep{
@@ -220,7 +227,6 @@ article{
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    max-width: 775px;
 }
 
 .label{
@@ -231,13 +237,14 @@ article{
     font-size: 18px;
     line-height: 150%;
     padding: 0 16px;
+    margin-bottom: 50px;
 }
 
 .span{
     font-size: 17px;
     line-height: 159%;
     color: #118da8;
-
+    margin-bottom: 20px;
 }
 
 .episod{
@@ -246,6 +253,7 @@ article{
     font-size: 64px;
     line-height: 110%;
     letter-spacing: 0.04em;
+    margin-bottom: 30px;
 }
 
 .about{
@@ -269,6 +277,12 @@ article{
     max-width: 590px;
 }
 
+.txt-host-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .add-span{
     font-weight: 400;
     font-size: 18px;
@@ -290,11 +304,6 @@ article{
 
 .frame:hover{
     transform: rotate(90deg);
-}
-
-
-.mb{
-    margin-bottom: 33px;
 }
 
 .wrp{
@@ -322,6 +331,7 @@ article{
     background-color: #000;
     margin: 100px 0;
     padding: 60px 60px 75px;
+
 }
 
 .sub-title{
@@ -373,7 +383,8 @@ input:active{
     gap: 15px;
     border-radius: 32px;
     max-width: 415px;
-    max-height: 320px;
+    /* max-height: 320px; */
+    justify-content: center;
     padding: 50px;
     background-color: #000;
 }
@@ -416,6 +427,12 @@ footer{
     gap: 10px;
 }
 
+.navigate-wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 .navigate{
     display: flex;
     flex-direction: column;
@@ -424,29 +441,67 @@ footer{
 
 
 @media screen and (max-width: 768px){
-    .main-wrapper{
-        flex-direction: column;
-        align-items: center;
+    header{
+        padding: 40px 20px;
     }
 
-    .main-text{
-        max-width: none;
+    nav ul{
+        display: none;
+    }
+
+    nav img{
+        display: inline-block;
+    }
+
+    section{
+        padding: 0 20px;
+    }
+
+    .main-wrapper{
+        flex-direction: column;
+        align-items: start;
+        margin: 60px 40px;
+    }
+
+    .title-ep{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 0 40px;
     }
 
     article{
         flex-direction: column;
         align-self: start;
+        gap: 40px
     }
 
     .your-host-wrapper{
         flex-direction: column;
         align-items: start;
+        padding: 100px 40px;
+    }
+
+    .ab-img{
+        order: -1;
+    }
+
+    .txt-host{
+        gap: 20px;
+    }
+
+    .txt-host-wrapper{
+        gap: 20px;
     }
 
     .subscribe-wrapper{
         flex-direction: column;
         align-self: start;
-        width:auto;
+    }
+
+    .review{
+        max-width: 356px;
+        
     }
 
     .cnc, .menu{
@@ -455,6 +510,7 @@ footer{
 
     .foot-wrapper{
         flex-direction: column;
+        gap: 130px;
     }
 }
 /* 
