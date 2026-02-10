@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="js/styles/styles.css" />
     <link rel="stylesheet" href="js/styles/lesson-8.css">
     <link rel="stylesheet" href="js/styles/lesson-10.css">
+    <link rel="stylesheet" href="style.css">
     <title>Основы JS c нуля ✨</title>
   </head>
   <body>
@@ -64,12 +65,16 @@
       </form>
       <div class="message-box"></div>
       <h3 id="course-title" class="title">Содержание курса</h3>
+
+      <form action="post" class="list-form">
+        <input type="text" name="lesson" id="lesson"><button type="submit">Добавить</button>
+      </form>
       <ul class="list">
-        <li class="item done">Введение в JS</li>
-        <li class="item">Операторы, сравнение, ветвление</li>
-        <li class="item">Функции</li>
-        <li class="item current" id="DOM">Массивы</li>
-        <li class="item">Объекты</li>
+        <li class="item done">Введение в JS<button clas="delete">X</button></li>
+        <li class="item">Операторы, сравнение, ветвление<button clas="delete">X</button></li>
+        <li class="item">Функции<button clas="delete">X</button></li>
+        <li class="item current" id="DOM">Массивы<button clas="delete">X</button></li>
+        <li class="item">Объекты<button clas="delete">X</button></li>
       </ul>
       <b>ok</b>
     </section>

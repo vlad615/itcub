@@ -36,7 +36,7 @@ const model = {
     },
 
     updateLesson(lessonId){
-        const newState = this.courseData.lessons.map(x => x.id == lessonId ? {...x, isDone: !isDone} : x);
+        const newState = this.courseData.lessons.map(x => x.id == lessonId ? {...x, isDone: !x.isDone} : x);
         this.courseData.lessons = newState;
         this.render();
     },

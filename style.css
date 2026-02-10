@@ -1,0 +1,14 @@
+.list{
+    position: relative;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.done::before{
+    content: "✅";
+    font-size: 13px;
+    margin-left: 5px;
+}
+
