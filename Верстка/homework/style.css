@@ -270,6 +270,13 @@ input, select{
 .stack-wrapper, fieldset{
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 fieldset{

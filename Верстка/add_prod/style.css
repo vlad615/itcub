@@ -49,7 +49,7 @@ section{
 }
 
 header{
-    padding: 40px 70px;
+    padding: 40px 20px;
 }
 
 .header-wrapper{
@@ -459,8 +459,7 @@ footer{
 
     .main-wrapper{
         flex-direction: column;
-        align-items: start;
-        margin: 60px 40px;
+        align-items: center;
     }
 
     .title-ep{
@@ -478,8 +477,8 @@ footer{
 
     .your-host-wrapper{
         flex-direction: column;
-        align-items: start;
-        padding: 100px 40px;
+        align-items: center;
+        padding: 100px 0px;
     }
 
     .ab-img{
@@ -513,10 +512,134 @@ footer{
         gap: 130px;
     }
 }
-/* 
 
-@media screen and (max-width: 575px){
-    .review{
-        max-height: none;
+
+@media screen and (max-width: 576px){
+    .main-wrapper{
+        margin: 40px 0 60px;
     }
-} */
+
+    .main-text{
+        padding: 0 20px;
+    }
+
+    h1{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+    }
+
+    .next{
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: 0.06em;
+    }
+
+    .next::after{
+        width: 114px;
+    }
+
+    .level{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: 0.06em;
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 1.29;
+        letter-spacing: 0.08em;
+    }
+
+    .lisn-on{
+        padding-top: 70px;
+    }
+
+    .episodes-wrapper{
+        margin: 60px 0 20px;
+    }
+
+    .title-ep{
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .btn-ep{
+        margin-top: 0;
+    }
+
+    article{
+        padding: 20px;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .label{
+        margin-bottom: 30px;
+    }
+
+    .episod{
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 1.1;
+        letter-spacing: 0.06em;
+    }
+
+    .mgb{
+        margin-bottom: 30px;
+    }
+
+    .your-host-wrapper{
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .frame{
+        margin-bottom: 0px;
+    }
+
+    .subscribe-wrapper{
+        margin: 60px 0;
+        gap: 60px;
+        padding: 60px 20px;
+    }
+
+    .sub-title{
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: 0.06em;
+    }
+
+    .wrp::before{
+        display: none;
+        bottom: 10px;
+        left: 410px;
+        transform: scaleX(-1);
+    }
+
+    .reviews-wrapper{
+        padding: 60px 0;
+    }
+
+    .review{
+        padding: 50px 20px;
+    }
+
+    footer{
+        padding: 0 40px;
+    }
+
+    .foot-wrapper{
+        padding: 60px 0;
+        gap: 80px;
+    }
+
+    .navigate-wrapper{
+        flex-direction: column;
+        gap: 60px;
+    }
+}

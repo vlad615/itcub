@@ -34,10 +34,11 @@ let timerId
 
 startButton.addEventListener('click', () => {
   let counter = 3
-
+  
   // your code
 })
 
 cancelButton.addEventListener('click', () => {
+  isTimerStarted = false
   // your code
 })
