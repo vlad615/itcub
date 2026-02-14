@@ -34,7 +34,18 @@ let timerId
 
 startButton.addEventListener('click', () => {
   let counter = 3
-  
+  if (isTimerStarted){
+    countdownDisplay.textContent = "Отменено"
+    clearTimeout(timerId)
+    isTimerStarted = false
+  }
+  setTimeout(()=>{
+    setTimeout(()=>{
+      counter--;
+      countdownDisplay.textContent = counter;
+    }, 1000)
+  }, 3000)
+  countdownDisplay.textContent = "🚀";
   // your code
 })
 

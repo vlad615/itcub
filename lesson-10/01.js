@@ -28,8 +28,16 @@ const model = {
     const newMovie = { id, title, description }
     this.movies.push(newMovie)
     view.renderMovies(this.movies)
+    
   },
   // your code
+  deleteMovie(movId){
+
+    this.movies = this.movies.filter((movie)=>{
+      return movie.id != movId
+    })
+    view.renderMovies(this.movies)
+  }
 }
 
 const view = {
@@ -50,6 +58,12 @@ const view = {
       inputDescription.value = ''
     })
 
+    const list = document.querySelector('.list')
+    list.addEventListener("click", (event)=>{
+      const movieId = event.target.parentElement.id
+      
+      controller.deleteMovie(movieId)
+    })
     // your code
   },
   renderMovies(movies) {
@@ -91,6 +105,9 @@ const controller = {
     }
   },
   // your code
+  deleteMovie(movId){
+    model.deleteMovie(movId)
+  }
 }
 
 function init() {

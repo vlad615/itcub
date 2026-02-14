@@ -623,9 +623,12 @@ footer{
 
     .reviews-wrapper{
         padding: 60px 0;
+        flex-wrap: nowrap;
+        overflow: auto;
     }
 
     .review{
+        min-width: 336px;
         padding: 50px 20px;
     }
 
