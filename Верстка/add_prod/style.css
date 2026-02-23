@@ -380,7 +380,7 @@ input:active{
     display:flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 100px 0;
 }
 
@@ -390,6 +390,7 @@ input:active{
     gap: 15px;
     border-radius: 32px;
     max-width: 423px;
+    min-width: 336px;
     justify-content: center;
     padding: 50px;
     background-color: #000;
@@ -465,6 +466,7 @@ footer{
 
     div.menu{
         max-width: 768px;
+        min-width: 375px;
         margin: 0 auto;
         display: none;
         flex-direction: column;
@@ -480,7 +482,7 @@ footer{
         transition: all 0.5s ease;  */
     }
 
-    div.menu
+    /* div.menu */
 
     nav.mobile ul{
         display: flex;
@@ -489,7 +491,7 @@ footer{
         justify-content: center;
     }
 
-    nav.mobile ul:first-child a{
+    nav.mobile ul li:first-child a{
         color:#118da8;
     }
 
@@ -537,11 +539,11 @@ footer{
         flex-direction: column;
         align-self: start;
     }
-
+/* 
     .review{
         max-width: 356px;
         
-    }
+    } */
 
     .cnc, .menu{
         padding: 0px;
@@ -655,9 +657,10 @@ footer{
     }
 
     .wrp::before{
-        display: none;
-        bottom: 10px;
-        left: 410px;
+        display: block;
+        bottom: -10px;
+        left:0;
+        right: 0;
         transform: scaleX(-1);
     }
 
@@ -668,7 +671,6 @@ footer{
     }
 
     .review{
-        min-width: 336px;
         padding: 50px 20px;
     }
 
